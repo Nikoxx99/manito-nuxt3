@@ -19,6 +19,14 @@
             {{ $t('navbar.animes') }}
           </NuxtLink>
         </li>
+        <li 
+          v-if="authStore.isAuth"
+          class="inline px-2 text-red-500 hover:text-white hover:transition-colors duration-300"
+        >
+          <NuxtLink to="/animes">
+            {{ $t('navbar.favorites') }}
+          </NuxtLink>
+        </li>
       </ul>
     </div>
     <ul class="list-none">

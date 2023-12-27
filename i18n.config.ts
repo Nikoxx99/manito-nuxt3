@@ -6,6 +6,7 @@ export default defineI18nConfig(() => ({
       navbar: {
         home: 'Home',
         animes: 'Animes',
+        favorites: 'Favorites',
         login: 'Login',
         logout: 'Logout',
         register: 'Register',
