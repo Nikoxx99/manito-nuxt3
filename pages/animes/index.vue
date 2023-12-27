@@ -1,8 +1,6 @@
 <template>
-  <div class="px-5">
-    <HotSeries />
-    <LatestEpisodes />
-    <Footer />
+  <div>
+    Serie List
   </div>
 </template>
 
