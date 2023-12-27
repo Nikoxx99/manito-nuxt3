@@ -47,14 +47,15 @@
 </template>
 
 <script setup>
-  import { useAuthStore } from "@/stores/auth";
   const authStore = useAuthStore();
-  const is_admin = ref(false)
   const serverError = ref(false);
   const submitLoginForm = async (formData) => {
-    console.log(formData)
     authStore.login(formData)
+    navigateTo('/')
   };
+  definePageMeta({
+    middleware: ['not-authenticated']
+  });
 </script>
 
 <style lang="scss" scoped>

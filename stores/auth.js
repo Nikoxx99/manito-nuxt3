@@ -33,7 +33,7 @@ export const useAuthStore = defineStore('auth', () => {
       }
     }
     
-    function $reset () {
+    function reset () {
       isAuth.value = false
       jwt.value = null
       user.value = null
@@ -45,7 +45,7 @@ export const useAuthStore = defineStore('auth', () => {
       user,
       login,
       readUserFromCookieAndSetSharedState,
-      $reset
+      reset
     }
 },
 {
