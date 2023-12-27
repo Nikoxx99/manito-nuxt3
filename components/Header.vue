@@ -23,7 +23,7 @@
     </ul>
     <ul class="list-none">
       <li 
-        v-if="!isAuth"
+        v-if="!authStore.isAuth"
         class="inline px-2 hover:text-yellow-500 hover:transition-colors duration-300"
       >
         <NuxtLink to="/auth/login">
@@ -31,7 +31,7 @@
         </NuxtLink>
       </li>
       <li 
-        v-if="!isAuth"
+        v-if="!authStore.isAuth"
         class="inline px-2 hover:text-yellow-500 hover:transition-colors duration-300"
       >
         <NuxtLink to="/auth/register">
@@ -39,7 +39,7 @@
         </NuxtLink>
       </li>
       <li 
-        v-if="isAuth"
+        v-if="authStore.isAuth"
         class="inline px-2 hover:text-yellow-500 hover:transition-colors duration-300"
       >
         <NuxtLink to="/profile">
@@ -47,7 +47,7 @@
         </NuxtLink>
       </li>
       <li 
-        v-if="isAuth"
+        v-if="authStore.isAuth"
         class="inline px-2 hover:text-yellow-500 hover:transition-colors duration-300"
       >
         <NuxtLink to="/logout">
@@ -59,8 +59,7 @@
 </template>
 
 <script setup>
-  const isAuth = ref(false)
-  const isMobile = ref(false)
+const authStore = useAuthStore();
 </script>
 
 <style scoped>

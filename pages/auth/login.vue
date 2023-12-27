@@ -11,7 +11,7 @@
         <FormKit
           type="text"
           label="Email"
-          name="email"
+          name="identifier"
           validation="required|email"
           placeholder="Enter your email..."
         />
@@ -47,17 +47,13 @@
 </template>
 
 <script setup>
-  // import { useAuthStore } from "@/stores/auth";
-  // const authStore = useAuthStore();
-  // const is_admin = ref(false)
-  // const serverError = ref(false);
+  import { useAuthStore } from "@/stores/auth";
+  const authStore = useAuthStore();
+  const is_admin = ref(false)
+  const serverError = ref(false);
   const submitLoginForm = async (formData) => {
     console.log(formData)
-    authStore.setAuthenticated(true)
-    if(is_admin.value){
-      return navigateTo("/admin/dashboard", { replace: true });
-    }
-    return navigateTo("/user/dashboard", { replace: true });
+    authStore.login(formData)
   };
 </script>
 
