@@ -1,7 +1,7 @@
 <template>
-  <nav class="h-12 flex items-center justify-between bg-zinc-900 border-yellow-500 border-b-2">
+  <nav class="h-12 flex items-center justify-between bg-zinc-900 border-yellow-500 border-b-2 px-4">
     <div class="flex items-center">
-      <NuxtLink to="/" class="mr-5">
+      <NuxtLink to="/" class="mr-4">
         <NuxtImg src="/animemanito.png" alt="logo" class="h-8 ml-2" />
       </NuxtLink>
       <ul class="list-none">

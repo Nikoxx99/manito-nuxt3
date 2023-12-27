@@ -15,8 +15,8 @@
         <h3 class="text-lg font-semibold">
             Episode 1
         </h3>
-        <p class="text-sm font-normal text-gray-300">
-          1 hour ago
+        <p class="text-sm font-normal text-gray-300 overflow-hidden text-nowrap text-ellipsis">
+          Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai
         </p>
       </div>
     </NuxtLink>
