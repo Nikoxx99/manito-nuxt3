@@ -1,13 +1,4 @@
 <template>
-  <div>
-    <LatestEpisodes />
-  </div>
+  <Carousel />
+  <LatestSeries style="margin-top:-200px;" />
 </template>
-
-<script setup>
-
-</script>
-
-<style lang="scss" scoped>
-
-</style>
