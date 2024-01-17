@@ -13,7 +13,7 @@
   <v-container style="height:100%;display:grid;align-items:center;">
     <div>
       <h2>Classroom of the Elite</h2>
-      <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti aliquid blanditiis quisquam cum, minus dignissimos aperiam ab laborum voluptates excepturi.</h4>
+       <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti aliquid blanditiis quisquam cum, minus dignissimos aperiam ab laborum voluptates excepturi.</h4>
     </div>
   </v-container>
 </v-carousel-item>
